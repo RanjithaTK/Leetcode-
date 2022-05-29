@@ -1,8 +1,8 @@
-let num = 121
+let x = 121
 
-function IsPalindrome(num) {
-  let number = Math.abs(num)
-  if (num === number) {
+function IsPalindrome(x) {
+  let number = Math.abs(x)
+  if (x === number) {
     let reverse = Number(String(number).split("").reverse().join(""))
     if (reverse === number) {
       return true
