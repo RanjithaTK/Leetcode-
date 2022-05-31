@@ -1,11 +1,41 @@
 function DivideIntegers(dividend, divisor) {
   let value = dividend / divisor
   if (value < 0) {
-    return Math.ceil(value)
+    if (value < -2147483648) {
+      return -2147483648
+    } else {
+      return Math.ceil(value)
+    }
   } else {
-    return Math.floor(value)
+    if (value > 2147483647) {
+      return 2147483647
+    } else {
+      return Math.floor(value)
+    }
   }
 }
-console.log(DivideIntegers(7, -3))
+console.log(DivideIntegers(-2147483648, -1))
 // console.log(Math.floor(8.33))
 // console.log(Math.ceil(-8.33))
+// var divide = function(dividend, divisor) {
+//     var did = Math.abs(dividend);
+//     var dis = Math.abs(divisor);
+//     var sign = (divisor > 0 && dividend > 0) || (divisor < 0 && dividend < 0);
+//     var res = 0;
+//     var arr = [dis];
+
+//     if (dividend === 0 || did < dis) return 0;
+//     if (divisor === -1 && dividend === -2147483648) return 2147483647;
+//     if (dis === 1) return divisor > 0 ? dividend : -dividend;
+
+//     while (arr[arr.length - 1] < did) arr.push(arr[arr.length - 1] + arr[arr.length - 1]);
+
+//     for (var i = arr.length - 1; i >= 0; i--) {
+//       if (did >= arr[i]) {
+//         did -= arr[i];
+//         res += i === 0 ? 1 : 2 << (i - 1);
+//       }
+//     }
+
+//     return sign ? res : -res;
+//   };
