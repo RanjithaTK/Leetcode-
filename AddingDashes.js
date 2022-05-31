@@ -1,4 +1,4 @@
-let nums = [3, 2, 2, 3, 2, 3]
+let nums = [3, 2, 2, 2, 3]
 let value = 3
 
 function AddingDashes(nums, value) {
@@ -8,7 +8,8 @@ function AddingDashes(nums, value) {
     }
     return num
   })
-  newNums.push(newNums.splice(newNums.indexOf("-"), 1)[0])
+  let index = newNums.indexOf("-")
+  newNums.push(newNums.splice(index, 1)[0])
   return newNums
 }
 console.log(AddingDashes(nums, value))
