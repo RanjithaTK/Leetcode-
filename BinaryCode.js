@@ -4,9 +4,9 @@ function hasAllCodes(s, k) {
   if (k > s.length) {
     return false
   }
-  const subStrings = new Set() //to get or define a new set,
-  for (let i = k; i < s.length; i++) {
-    //i=0, s.lenght =8, 1<8,
+  const subStrings = new Set()
+  for (let i = k; i <= s.length; i++) {
+    //i=2, s.lenght =8, 1<8,
     subStrings.add(s.slice(i - k, i)) //adds whatver in the brkt with substring , s.slice(0,2)
   }
   return subStrings.size === 2 ** k
