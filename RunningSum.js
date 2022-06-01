@@ -15,6 +15,7 @@ function RunningSum(nums) {
   //assigns first item of array to be 1
   ans[0] = nums[0]
   for (let i = 1; i < nums.length; i++) ans[i] = ans[i - 1] + nums[i]
+  //   console.log(ans[-1])  ????????????? undefined?
   //adds up the previous item with current to return output array
   return ans
 }
