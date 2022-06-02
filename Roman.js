@@ -1,4 +1,4 @@
-let s = "LVIII"
+let s = "IV"
 let values = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 }
 
 function RomanToInteger(s) {
@@ -11,9 +11,9 @@ function RomanToInteger(s) {
     // console.log(values["I"])  value =1
     // console.log(curr)
     let nxt = values[s[i + 1]] //here 5
-    // console.log(nxt)
+    // console.log(s[i + 1])
     if (curr < nxt) {
-      result += nxt - curr //IV -> 5-4=1
+      result += nxt - curr //IV -> 5-1=4
       i++
     } else {
       result += curr

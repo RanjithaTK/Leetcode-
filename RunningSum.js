@@ -20,3 +20,15 @@ function RunningSum(nums) {
   return ans
 }
 console.log(RunningSum(nums))
+
+/////////////////////////////////////////////way2
+
+function RunningSum(nums) {
+  let ans = []
+  sum = 0
+  for (let i = 0; i < nums.length; i++) {
+    sum += nums[i]
+    ans.push(sum)
+  }
+  return ans
+}
