@@ -4,14 +4,14 @@ let matrix = [
   [7, 8, 9],
 ]
 function Transpose(matrix) {
-  let transposematrix = []
+  let transpose = []
   for (let i = 0; i < matrix.length; i++) {
-    let rowmatrix = []
+    let col = []
     for (let j = 0; j < matrix[i].length; j++) {
-      rowmatrix.push(matrix[j][i])
+      col.push(matrix[j][i])
     }
-    transposematrix.push(rowmatrix)
+    transpose.push(col)
   }
-  return transposematrix
+  return transpose
 }
 console.log(Transpose(matrix))
