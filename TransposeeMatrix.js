@@ -6,10 +6,10 @@ let matrix = [
 function Transpose(matrix) {
   //   let transpose = []
   //   for (let i = 0; i < matrix[0].length; i++) {
-  //     ///matrix[0] = [1,2,3] length =3, i=0 ,
+  //     ///matrix[0] = [1,2,3] length =3, i=0 ,j=1
   //     let col = []
   //     for (let j = 0; j < matrix.length; j++) {
-  //       col.push(matrix[j][i])
+  //       col.push(matrix[j][i]) [1][0]
   //     }
   //     transpose.push(col)
   //   }
