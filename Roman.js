@@ -1,4 +1,4 @@
-let s = "IV"
+let s = "XLIV"
 let values = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 }
 
 function RomanToInteger(s) {
@@ -7,7 +7,7 @@ function RomanToInteger(s) {
   //   console.log(s.length)
   //   console.log(split.length)
   for (let i = 0; i < s.length; i++) {
-    let curr = values[s[i]] //here 50
+    let curr = values[s[i]] //here 1
     // console.log(values["I"])  value =1
     // console.log(curr)
     let nxt = values[s[i + 1]] //here 5
@@ -16,7 +16,7 @@ function RomanToInteger(s) {
       result += nxt - curr //IV -> 5-1=4
       i++
     } else {
-      result += curr
+      result += curr 
     }
   }
   return result
@@ -37,4 +37,4 @@ function Roman(s) {
   }
   return sum
 }
-console.log(Roman(s))
+// console.log(Roman(s))

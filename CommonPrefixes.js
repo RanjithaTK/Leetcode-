@@ -10,10 +10,11 @@ function longestCommonPrefixes(str) {
     for (let j = 1; j < str.length; j++) {
       //   console.log(str[j][i])
       if (str[j][i] !== char) {
+        //i=0 here f =char so adds to prefix
         return prefix
       }
     }
-    prefix += char
+    prefix += char //""+fl
   }
   return prefix
 }
