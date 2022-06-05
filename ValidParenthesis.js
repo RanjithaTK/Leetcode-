@@ -10,7 +10,7 @@ const isValid = function (s) {
     if (closings[s[i]]) {
       stack.push(closings[s[i]])
     } else {
-      if (closings[s[i]] !== stack.pop()) {
+      if (s[i] !== stack.pop()) {
         return false
       }
     }
