@@ -22,7 +22,7 @@ function intersection(headA, headB) {   //nodes will have reference to the curre
   }
   return pointer1
 }
-console.log(intersection(headA, headB))
+console.log(intersection(listA, listB))
 
 ////////////////////////////////////////////
 
