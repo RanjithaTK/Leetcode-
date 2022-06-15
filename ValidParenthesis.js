@@ -14,6 +14,7 @@ const isValid = function (s) {
         return false
       }
     }
+    //gd
 
     //s.charAt(i)="("
     //if closings has s.charAt(i), push value to stack
